@@ -1,0 +1,9 @@
+.colombia-wrap.nf-pass.field-wrap > .nf-field-element:after,
+.colombia-wrap.nf-error.field-wrap > .nf-field-element:after {
+    display: none !important;
+}
+.colombia-wrap.field-wrap fieldset .field-wrap:first-child {
+    clear: both;
+    position: relative;
+    margin-bottom: 25px;
+}

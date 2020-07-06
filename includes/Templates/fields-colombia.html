@@ -1,0 +1,32 @@
+<script id="tmpl-nf-field-colombia" type="text/template">
+    <fieldset
+        id="nf-field-{{{ data.id }}}"
+        name="nf-field-{{{ data.id }}}"
+        data-colombia-fields="{{{ data.id }}}"
+
+        value="{{{ data.value }}}" {{{ data.renderPlaceholder() }}}>
+        <div class="field-wrap">
+            <div class="nf-field-label">
+                <label class="nf-colombia-states"  for="nf-field-colombia-state-{{{ data.id }}}">
+                    Departamento <# if (data.maybeRequired()) { #> <span class="ninja-forms-req-symbol">*</span> <# } #>
+                </label>
+            </div>
+            <div class="nf-field-element">
+                <select id="nf-field-colombia-state-{{{ data.id }}}" name="nf-field-colombia-state-{{{ data.id }}}" class="ninja-forms-field nf-element nf-field-colombia-state" {{{ data.maybeRequired() }}}></select>
+            </div>
+        </div>
+
+        <div class="field-wrap">
+            <div class="nf-field-label">
+                <label class="nf-colombia-cities" for="nf-field-colombia-city-{{{ data.id }}}">
+                    Ciudad <# if (data.maybeRequired()) { #> <span class="ninja-forms-req-symbol">*</span> <# } #>
+                </label>
+            </div>
+            <div class="nf-field-element">
+                <select id="nf-field-colombia-city-{{{ data.id }}}" name="nf-field-colombia-city-{{{ data.id }}}" class="ninja-forms-field nf-element nf-field-colombia-city" {{{ data.maybeRequired() }}}></select>
+            </div>
+        </div>
+
+    </fieldset>
+
+</script>
